@@ -15,7 +15,7 @@ function promeniSliku(slika,nizSlika) {
 }
 
 
-if(localStorage.getItem("theme")){
+if(localStorage.getItem("theme")!=null){
   document.body.className=localStorage.getItem("theme");
 }
 function promeniStyle(style){
