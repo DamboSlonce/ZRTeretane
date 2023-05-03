@@ -1,0 +1,39 @@
+.CalcContainer{
+  width: 600px;
+  height: 780px;
+  background-color: var(--calcContainerBackground);
+  margin:32px auto;
+  border-radius: 30px;
+  border : 5px solid var(--calcCountanerBorder);
+  display: flex;
+  flex-direction: column;
+  color : var(--arrowTextColor);
+}
+.CalcText{
+  margin: 32px;
+}
+.CalcEntry{
+  width: 80%;
+  margin:0 auto 16px auto;
+  background-color: var(--calcEntryBackground);
+  border-radius: 30px;
+  padding: 16px;
+}
+.CalcResultButton{
+  width: 150px;
+  height: 40px;
+  margin-left: 60%;
+  border:none;
+  background-color:var(--calcEntryBackground);
+  color:var(--arrowTextColor);
+  border-radius: 10px;
+  font-size: 24px;
+}
+.CalcResultButton:hover{
+  color:var(--arrowHoverText);
+  background-color: var(--navHoverBackgroundColor);
+}
+.CalcEntryButton{
+  font-size: 24px;
+  accent-color: #1c1c1c;
+}

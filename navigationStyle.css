@@ -1,0 +1,105 @@
+.darkMode{
+  --backgroundColor : #282828 ;
+  --arrowBackgroundColor : #1f1f1f;
+  --arrowTextColor : #FFFFFF;
+  --navBackgroundColor : #9e9e9e;
+  --navHoverBackgroundColor: #303030;
+  --navHoverTextColor : #c4c4c4;
+  --navTextColor : #171717;
+  --arrowHoverText : #e3e3e3;
+  --arrowHoverBackgroundColor : #383838;
+  --calcContainerBackground : #4d4d4d;
+  --calcCountanerBorder : #c4c4c4;
+  --calcEntryBackground : #363636;
+  --spraveSuggestionsBackground : #303030
+}
+
+.lightMode{
+  --backgroundColor : #f5f5f5 ;
+  --arrowBackgroundColor : #d4d4d4;
+  --arrowTextColor : #0f0f0f;
+  --navBackgroundColor : #9e9e9e;
+  --navHoverBackgroundColor: #b5b5b5;
+  --navHoverTextColor : #1a1a1a;
+  --navTextColor : #0f0f0f;
+  --arrowHoverText : #383838;
+  --arrowHoverBackgroundColor :#e3e3e3 ;
+  --calcContainerBackground : #FFFFFF;
+  --calcCountanerBorder : #000000;
+  --calcEntryBackground : #a3a3a3;
+  --spraveSuggestionsBackground : #c4c4c4
+}
+
+
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color: var(--backgroundColor);
+  width:100%;
+  height:100%;
+}
+
+.NavDiv{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  height:60px;
+  background-color: var(--navBackgroundColor);
+  align-items: center;
+  font-family: Verdana;
+}
+
+.NavTitle{
+  margin-left: 24px;
+  font-size: 32px;
+  margin-right: 24px;
+  color : var(--navTextColor);
+}
+
+
+
+.NavLink:hover{
+  background-color: var(--navHoverBackgroundColor);
+  color:var(--navHoverTextColor);
+}
+.NavLink{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 250px;
+  text-align: center;
+  font-size: 24px;
+  text-decoration:none;
+  height: 100%;
+  color:var(--navTextColor);
+}
+
+
+.NavColor {
+  width:48px;
+  height:100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.NavColor svg {
+  height: 32px !important;
+  width: 32px !important;
+}
+.NavColor:hover svg{
+    fill : var(--navHoverTextColor) !important;
+}
+
+.NavColor:hover{
+  background-color: var(--navHoverBackgroundColor);
+}
+.NavColorContainer{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  height: 100%;
+  width: 96px;
+  justify-content: space-between;
+}
